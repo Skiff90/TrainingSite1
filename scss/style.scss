@@ -1,0 +1,754 @@
+//обнуление
+@import "_nullestyle";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Overpass:wght@700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+	max-width: 102.86rem;
+	height: 100%;
+	margin: 0 auto;
+		}
+
+.wrapper {
+	max-width:102.86rem;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+		}
+.main {
+	display: flex;
+	flex-direction: column;
+	flex:1 1 auto;
+	height: 100%;
+	font-family: 'Open Sans';
+		}
+.bike {
+	display: flex;
+	height: 100%;
+	@media (max-width: 1100px){
+		height: 100%;
+	}
+	@media (max-width:756px){
+		flex-direction: column;
+		height: 900px;
+			}
+			&__left {
+				height: 64.28rem;;
+			@media (max-width: 1100px){
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				}
+			@media (max-width:756px) {
+				width: 100%;
+				}
+			background:  #6257FE;
+			flex: 0 1 auto;
+			width: 41.4%;
+			
+		}
+
+		&__lable {
+			@media (max-width: 1100px){
+				position: absolute;
+				top: 1.21rem;
+				left:1.36rem;
+			}
+			@media (max-width:756px){
+				display: none;
+			}
+			font-family: 'Overpass';
+			display: flex;
+			padding: 1.21rem 0 14.28rem 1.36rem;
+			color: white;
+		}
+	
+		&__image{
+			width: 2.85rem;
+			height: 2.85rem;
+		}
+		&__span {
+			padding: 0 0 0 1rem;
+					}
+
+		&__text {
+			@media (max-width: 1100px){
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			display: flex;
+			padding: 0 1rem 1rem 1rem;
+			
+			}
+			
+			padding: 0 0 22.28rem 6.07rem;
+			color: white;
+		}
+
+		&__litletext {
+			@media (max-width: 1100px){
+				text-align: center;
+			}
+			font-size: 1.14rem;
+			line-height: 1.57rem;
+			padding: 0 0 0 0.5rem;
+		}
+
+		&__title {
+			font-size: 4rem;
+			font-family: 'Overpass';
+			line-height: 5.07rem;
+		}
+
+		&__paragraph {
+			font-size: 1.42rem;
+			line-height: 2.28rem;
+			text-align-last: left;
+			padding: 0 0 4.78rem 0;
+			@media(max-width:756px){
+				padding: 0 0 2rem 0;
+					}
+		}
+
+		&__button {
+			//margin: 0 0 22.28rem 0;
+			width: 13.71rem;
+			height: 5rem;
+			font-weight: 600;
+			font-size: 1.28rem;
+			line-height: 2.28rem;
+			transition: all ease 2s;
+			border-radius: 0.3rem;
+			&:hover{
+				box-shadow: 1rem 1rem 10rem;
+			}
+			&:active{
+				background-color:gray;
+			}
+		}
+
+		&__right {
+			flex: 1 1 auto;
+			background: url('../img/bike.jpg') 0 0/100% 100%  no-repeat;
+			min-width: 58.6%;
+			height: 64.28rem;
+				@media (max-width:756px){
+				height: 100%;
+			}
+			
+			
+			&_social {
+				font-size: 2rem;
+				align-items: center;
+				justify-content:space-evenly;
+				display: flex;
+				width: 11.57rem;
+				height: 4.57rem;
+				background: #6257FE;
+				margin-left: auto;
+				transition: all ease 2s;
+				& a:hover{
+					transform: rotate(350deg);
+				}
+				}
+		}
+		
+	}
+
+	.working {
+		display: flex;
+		//hight: 64.28rem;
+		width: 100%;
+		@media (max-width:1100px){
+			flex-direction: column;
+			width: 100%;
+		}
+				&__left {
+			background: #100C46;
+			min-width: 50%;
+			//hight: 64.28rem;
+		}
+
+		&__text {
+			font-size: 1.14rem;
+			line-height: 1.57rem;
+			padding: 16.07rem 0 16.07rem 6.07rem;
+			color: #6257FE;
+			;
+			@media (max-width:756px){
+				padding: 8.07rem 0 8.07rem 0;
+				text-align: center;
+			}
+		}
+
+		&__litletext {
+			font-size: 1.14rem;
+			line-height: 1.57rem;
+			
+		}
+
+		&__title {
+			font-size: 4rem;
+			font-family: 'Overpass';
+			line-height: 5.07rem;
+		}
+
+		&__paragraph {
+			font-size: 1.42rem;
+			line-height: 2.28rem;
+			color: rgba(255, 255, 255, 0.8);
+			padding: 0 11.35rem 0 0;
+			@media (max-width:756px){
+				padding: 0 2rem 0 2rem;
+			}
+		}
+
+		&__right {
+			//hight: 64.28rem;
+			min-width: 50%;
+		}
+
+		&__image {
+			z-index: 9999;
+			position: relative;
+			top: 10.64rem;
+			left:-9.7%;
+			box-shadow: 0px 10px 50px rgba(16, 12, 70, 0.2);
+			max-width: 100%;
+			height: 67%;
+			@media (max-width:1100px){
+				position: static;
+				width: 100%;
+				height: 100%;
+			}
+
+		}
+}
+
+
+.services {
+	display: flex;
+	@media (max-width:756px){
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}	
+	&__left {
+		@media (max-width:756px){
+			min-width: 100%;
+			padding: 3rem  1rem 3rem 1rem;
+			text-align: center;
+		}
+		@media(max-width:1100px){
+			padding-bottom: 10rem;
+		}
+		max-width: 58.69%;
+		padding: 8.5rem 7.42rem 19rem 6.07rem;
+	}
+		
+	&__text {
+		@media(max-width: 480px){
+			font-size: 1rem;
+		}
+		font-size: 1.14rem;
+		line-height: 1.57rem;
+		color: #6257FE;
+		padding: 0 0 0.5rem 0;
+	}
+
+	&__title {
+		@media(max-width: 480px){
+			font-size: 2.5rem;
+		}
+		font-family: 'Overpass';
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 5.07rem;
+		color: #100C46;
+		padding: 0 0 5rem 0;
+
+	}
+	&__box{
+		display: grid;
+		grid-template: 1fr 1fr/ 1fr 1fr;
+		grid-row-gap: 4.57rem;
+		grid-column-gap: 4.57rem;
+		;
+		}
+	
+	&__right {
+	background: #6257FE;
+	width: 41.31%;
+	@media (max-width:756px){
+		width: 100%;
+		height: 100%;
+	}
+	
+	}
+
+	&__imageman {
+		position: relative;
+		top: 11.85rem;
+		left:-16.11%;
+		width: 71.76%;
+		z-index: 1;
+		@media (max-width:1100px){
+			position: static;
+			width: 100%;
+			height: 50%;
+		}
+		
+	}
+
+	&__iagephone {
+		@media (max-width:1100px){
+			top: 1%;
+			left:30%;
+			}
+			@media (max-width:756px){
+				display: none;
+			}
+		position: relative;
+		top: -15.55%;
+		left: 45.78%;
+		width: 40%;
+		z-index: 2;
+		border-radius: 30px;
+		box-shadow: 10px 10px 20px;
+	}
+}
+.blocks {
+	&__span {
+		font-size: 1.57rem;
+		}
+
+	&__text {
+		@media(max-width: 480px){
+			font-size: 1.2rem;
+		}
+		font-weight: 600;
+		font-size: 1.57rem;
+		line-height: 2.28rem;
+		color: #100C46;
+		&:before{
+			content: "";
+			position: relative;
+			top:-8px;
+			display: inline-block;
+			border-bottom: 1px solid rgba(16, 12, 70, 0.8);
+			width: 77px;
+			margin : 0 12px 0 0;
+
+		}
+	}
+
+	&__paragraph {
+		@media(max-width: 480px){
+			font-size: 1.1rem;
+		}
+		font-size: 1.42rem;
+		color: rgba(16, 12, 70, 0.8);
+		line-height: 2.28rem;
+	}
+}
+
+.portfolio {
+	text-align: center;
+	padding: 5.42rem 0 12.4rem 0 ;
+	
+
+	&__text {
+		font-size: 1.14rem;
+		line-height: 1.57rem;
+		color: #6257FE;
+		padding: 0 0 0.5rem 0;
+	}
+
+	&__title {
+		font-family: 'Overpass';
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 5.07rem;
+		color: #100C46;
+		padding: 0 0 5rem 0;
+	}
+
+	&__photo {
+		display: flex;
+		padding: 0 6.07rem 0 6.07rem ;
+		justify-content: center;
+	
+		@media(max-width: 756px){
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 1rem;
+						
+		}
+			}
+}
+.mySlides {
+	order: 2;
+	width: 25%;
+	height: 100%;
+	padding-left: 1.64rem;
+	transition: transform ease 1s;
+	&:last-child	{
+	padding-left: 0;
+		}
+		&:hover{
+			transform: scale(1.2);
+		}
+		@media(max-width: 756px){
+			&:hover{
+				transform: scale(1);
+			}
+		}
+	@media(max-width: 756px){
+		padding: 0;
+		width: 50%;
+		}
+}
+.display-left {
+	background-color: white;
+	display: none;
+		width: 30px;
+      height: 30px;
+      border-top: 5px solid black;
+      border-right: 5px solid black;
+      margin-left: 5px;
+		transform: rotate(45deg);
+	@media(max-width: 756px){
+		display: block;
+		order: 3;
+	}
+	}
+.display-right {
+	display: none;
+		background-color: white;
+		width: 30px;
+      height: 30px;
+      border-top: 5px solid black;
+      border-right: 5px solid black;
+      margin-right: 5px;
+		transform: rotate(-135deg);
+	@media(max-width: 756px){
+		display: block;
+		order: 1;
+	}
+	}
+
+	.team {
+		text-align: center;
+	padding: 5.42rem 0 12.4rem 0 ;
+
+		&__text {
+			font-size: 1.14rem;
+		line-height: 1.57rem;
+		color: #6257FE;
+		padding: 0 0 0.5rem 0;
+		}
+
+		&__title {
+			font-family: 'Overpass';
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 5.07rem;
+		color: #100C46;
+		padding: 0 0 5rem 0;
+		}
+
+		&__photo {
+			display: flex;
+		padding: 0 6.07rem 0 6.07rem ;
+		justify-content: center;
+	
+		@media(max-width: 1100px){
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 1rem;
+						
+		}
+		}
+}
+.mySlidesT {
+	width: 100%;
+	
+}
+.display-leftT {
+	background-color: white;
+	display: none;
+		width: 30px;
+      height: 30px;
+      border-top: 5px solid black;
+      border-right: 5px solid black;
+      margin-left: 5px;
+		transform: rotate(45deg);
+	@media(max-width: 1100px){
+		display: block;
+		order: 3;
+		
+		}
+}
+.display-rightT {
+	display: none;
+		background-color: white;
+		width: 30px;
+      height: 30px;
+      border-top: 5px solid black;
+      border-right: 5px solid black;
+      margin-right: 5px;
+		transform: rotate(-135deg);
+	@media(max-width: 1100px){
+		display: block;
+		order: 1;
+	}
+}
+
+.card {
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	padding-left: 1.64rem;
+		&:last-child	{
+	padding-left: 0;
+		}
+		@media(max-width: 1100px){
+		padding: 0;
+		width: 50%;
+		}
+
+	&__data {
+		background-color: rgba(99, 88, 254,0.7);
+		display: flex;
+		position: relative;
+		top: -5.71rem;
+		height: 5.71rem;
+		justify-content: space-between;
+		padding: 0 1rem;
+		align-items: center;
+		color: white;
+		display: none;
+		margin-bottom: -5.71rem;
+			}
+
+	
+}
+
+.card:hover .card__data{
+		display: flex;
+		
+}
+
+.contact {
+	display: flex;
+	flex-wrap: nowrap;
+	@media(max-width:756px){
+		flex-direction: column;
+			}
+	
+
+	&__left {
+		width: 58.68%;
+		padding: 0 0 10.07rem 6.07rem;
+		@media(max-width:756px){
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 0 0 5rem 0;
+		}
+	}
+
+	&__text {
+		font-size: 1.14rem;
+		line-height: 1.57rem;
+		color: #6257FE;
+		padding: 0 0 0.5rem 0;
+	}
+
+	&__title {
+		font-family: 'Overpass';
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 5.07rem;
+		color: #100C46;
+		padding: 0 0 4rem 0;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+			
+	}
+
+	&__right {
+		width: 41.32%;
+		background: #6257FE;
+		display: flex;
+		@media(max-width:756px){
+			width: 100%;
+			flex-direction: column;
+		}
+			}
+
+	&__map {
+		min-width: 100%;
+		position: relative;
+		top: 15.77%;
+		left:-43.37%;
+		flex: 1 1 auto;
+		@media(max-width:756px){
+			position: static;
+		}
+	}
+
+	&__cont {
+		z-index: 5;
+		display: flex;
+		flex-direction: column;
+		color:white;
+		position: relative;
+		top:17.42rem;
+		left:-40%;
+		@media(max-width:756px){
+			text-align: center;
+			position: static;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			padding: 1rem 1rem 1rem 1rem;
+		}
+
+	}
+
+	&__phone {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 6rem;
+		@media(max-width:756px){
+			padding-bottom: 0;
+		}
+	}
+
+	&__email {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 6rem;
+		@media(max-width:756px){
+			padding-bottom: 0;
+		}
+	}
+
+	&__adress {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.spanOne {
+	font-weight:900;
+	padding-bottom: 1rem;
+	
+}
+.spanTwo {
+	padding-bottom: 1rem;
+}
+.spanThree {
+	padding-bottom: 1rem;
+}
+
+
+
+input {
+	color: rgba(16, 12, 70, 0.8);
+	width: 52.42%;
+	margin-bottom: 1.28rem;
+	height: 6.43rem;
+	background: #F4F3FF;
+	font-weight: 400;
+	font-size: 1.43rem;
+	line-height: 2.28rem;
+	padding-left: 1.36rem;
+	@media(max-width:756px){
+		width: 100%;
+	}
+}
+textarea{
+	color: rgba(16, 12, 70, 0.8);
+	width: 52.42%;
+	margin-bottom: 1.28rem;
+	height: 14.64rem;
+	background: #F4F3FF;
+	font-weight: 400;
+	font-size: 1.43rem;
+	line-height: 2.28rem;
+	padding-left: 1.36rem;
+	@media(max-width:756px){
+		width: 100%;
+	}
+}
+.button{
+	width: 34.55%;
+	height: 5rem;
+	background: #6257FE;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 1.28rem;
+	line-height: 2.28rem;
+	color: #FFFFFF;
+	padding-left: 0;
+	&:hover{
+		box-shadow: 0px 10px 30px rgba(98, 87, 254, 0.3);
+	}
+	@media(max-width:756px){
+		width: 100%;
+	}
+}
+
+.footer {
+	height: 18.85rem;
+	padding-top:8rem;
+	display: flex;
+	align-items: center;		
+	@media(max-width:1100px){
+		justify-content: space-between;
+		padding: 0rem 5rem 0 5rem;
+	}
+@media(max-width:400px){
+	padding: 0 1rem;
+	height: 9rem;
+}
+	&__span {
+	padding-left: 43.88%;
+	font-size: 1.43rem;
+	line-height: 2.28rem;
+	color: rgba(16, 12, 70, 0.8);
+	@media(max-width:1100px){
+		padding-left: 0;
+	}
+	}
+
+	&__image {
+		z-index: 99;
+		background: url('../img/scrooll.jpg') center no-repeat;
+		width: 70px;
+		height: 70px;
+		margin-left: 33.19%;
+		@media(max-width:1100px){
+				margin-left: 0;
+		}
+				}
+}
+
+@media(max-width:756px){
+	html,body{
+		overflow-x: hidden;
+	}
+}
+
